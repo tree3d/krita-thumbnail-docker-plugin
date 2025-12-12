@@ -1,6 +1,6 @@
-# krita-thumbnail-docker-plugin
+# krita-thumbnail-dock-plugin
 
-Simple Krita Docker plugin that creates a dock with "clickable" thumbnail previews from the .kra files stored in a selected folder, ordered by date created descending.
+Simple Krita plugin that creates a dock with "clickable" thumbnail previews from the .kra files stored in a selected folder, ordered by date created descending.
 
 ## Description
 
@@ -25,12 +25,9 @@ The plugin scans the configured folder for files with the .kra extension, genera
 
 ## Installation (overview)
 
-1. Build or pull the Docker image provided in this repository (if you want to use Docker packaging).
-2. Run the container or copy the plugin files into your Krita Python plugin directory.
+1. Copy the plugin files to your .../krita/pykrita folder
 3. Restart Krita and enable the plugin from the settings/plugins dialog (if required).
 4. Use the plugin UI to select the folder containing your .kra files.
-
-Note: Exact build/run commands and paths depend on your environment; see the repository's scripts or Dockerfile for specifics.
 
 ## Usage
 
@@ -38,8 +35,3 @@ Note: Exact build/run commands and paths depend on your environment; see the rep
 - Open the plugin dock.
 - Select the folder that contains your .kra files.
 - Browse thumbnails (newest first) and click any thumbnail to open that file.
-
-## Development
-
-- The repository includes code to package and run the plugin in Docker for easier testing and distribution.
-- To develop locally without Docker, copy the plugin into Krita's Python plugin directory and restart Krita to load the plugin.
